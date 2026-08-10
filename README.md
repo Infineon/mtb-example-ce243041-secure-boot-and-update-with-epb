@@ -14,7 +14,7 @@ See the [Design and implementation](docs/design_and_implementation.md) for the f
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-ce243041-secure-boot-and-update-with-epb)
 
-[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDMwNDEiLCJTcGVjIE51bWJlciI6IjAwMi00MzA0MSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IENvbnRyb2wgQzMgTUNVOiBTZWN1cmUgQm9vdCBhbmQgdXBkYXRlIHdpdGggRVBCIiwicmlkIjoidmluYXkucmFuZ2Fzd2FteUBpbmZpbmVvbi5jb20iLCJEb2MgdmVyc2lvbiI6IjEuMC4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
+[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDMwNDEiLCJTcGVjIE51bWJlciI6IjAwMi00MzA0MSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IENvbnRyb2wgQzMgTUNVOiBTZWN1cmUgQm9vdCBhbmQgdXBkYXRlIHdpdGggRVBCIiwicmlkIjoidmluYXkucmFuZ2Fzd2FteUBpbmZpbmVvbi5jb20iLCJEb2MgdmVyc2lvbiI6IjEuMC4xIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
 
 ## Requirements
 
@@ -192,8 +192,9 @@ See [Using the code example](docs/using_the_code_example.md) for instructions on
     ![](images/terminal-updated-image.png)
 
 > **Note (Optional):**  
-**Encrypted update:** To deliver the update image as ciphertext, complete the [Encrypted update setup](docs/setup.md#2-encrypted-update) (EC256 or KDF-CMAC), then repeat **steps 6–8** to build and download the update. The combined update hex is now signed **and** encrypted; the bootloader transparently decrypts it while promoting it to the primary slot.  
-**Secure boot of the Edge Protect Bootloader):** To make the BootROM authenticate the bootloader itself, complete the [secure boot of the Edge Protect Bootloader setup](docs/setup.md#3-secure-boot-of-the-edgeprotect-bootloader) to sign the bootloader and provision the device, then repeat **steps 5–8**, programming the signed Edge Protect Bootloader in place of the standard one. On each boot, the BootROM authenticates the EPB image before launching it.
+1. **Encrypted update:** To deliver the update image as ciphertext, complete the [Encrypted update setup](docs/setup.md#2-encrypted-update) (EC256 or KDF-CMAC), then repeat **steps 6–8** to build and download the update. The combined update hex is now signed **and** encrypted; the bootloader transparently decrypts it while promoting it to the primary slot.
+2. **Secure boot of the Edge Protect Bootloader:** To make the BootROM authenticate the bootloader itself, complete the [secure boot of the Edge Protect Bootloader setup](docs/setup.md#3-secure-boot-of-the-edgeprotect-bootloader) to sign and program the bootloader and provision the device. On each boot, the BootROM authenticates the EPB image before launching it.
+
 
 ## Related resources
 
@@ -219,6 +220,7 @@ Document title: *CE243041* – *PSOC&trade; Control C3 MCU: Secure Boot and upda
  Version | Description of change
  ------- | ---------------------
  1.0.0   | New code example
+ 1.0.1   | Addressed download failure issue and typo in code example name 
 
 <br>
 

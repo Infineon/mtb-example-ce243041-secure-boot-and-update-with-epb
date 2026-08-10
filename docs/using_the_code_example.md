@@ -40,10 +40,10 @@ The 'project-creator-cli' tool can be used to create applications from a CLI ter
 
 Use a CLI terminal to invoke the 'project-creator-cli' tool. On Windows, use the command-line 'modus-shell' program provided in the ModusToolbox&trade; installation instead of a standard Windows command-line application. This shell provides access to all ModusToolbox&trade; tools. You can access it by typing "modus-shell" in the search box in the Windows menu. In Linux and macOS, you can use any terminal application.
 
-The following example clones the "[Secure Boot and Update with EPB](https://github.com/Infineon/mtb-example-ce-243041-secure-boot-and-update-with-epb)" application with the desired name "SecBootUpdateEPB" configured for the *KIT_PSC3M6_EVAL* BSP into the specified working directory, *C:/mtb_projects*:
+The following example clones the "[Secure Boot and Update with EPB](https://github.com/Infineon/mtb-example-ce243041-secure-boot-and-update-with-epb)" application with the desired name "SecBootUpdateEPB" configured for the *KIT_PSC3M6_EVAL* BSP into the specified working directory, *C:/mtb_projects*:
 
    ```
-   project-creator-cli --board-id KIT_PSC3M6_EVAL --app-id mtb-example-ce-243041-secure-boot-and-update-with-epb --user-app-name SecBootUpdateEPB --target-dir "C:/mtb_projects"
+   project-creator-cli --board-id KIT_PSC3M6_EVAL --app-id mtb-example-ce243041-secure-boot-and-update-with-epb --user-app-name SecBootUpdateEPB --target-dir "C:/mtb_projects"
    ```
 
 The 'project-creator-cli' tool has the following arguments:

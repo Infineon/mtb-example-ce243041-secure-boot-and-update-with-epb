@@ -752,7 +752,7 @@
                     <Block location="vres[0].memory_region_data[4]" locked="true"/>
                     <Parameters>
                         <Param id="description" value="secondary slot image"/>
-                        <Param id="domain" value="fKrR_ef1zb0"/>
+                        <Param id="domain" value="TvjaQ-XJKas"/>
                         <Param id="memoryId" value="FLASH"/>
                         <Param id="offset" value="0x00040000"/>
                         <Param id="regionId" value="secondary_slot"/>

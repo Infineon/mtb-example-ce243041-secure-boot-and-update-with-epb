@@ -48,7 +48,7 @@ TARGET=KIT_PSC3M6_EVAL
 #
 # If APPNAME is edited, ensure to update or regenerate launch
 # configurations for your IDE.
-APPNAME=mtb-example-ce-243041-secure-boot-and-update-with-epb
+APPNAME=mtb-example-ce243041-secure-boot-and-update-with-epb
 
 # Name of toolchain to use. Options include:
 #

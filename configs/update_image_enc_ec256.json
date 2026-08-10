@@ -11,7 +11,7 @@
                     "inputs": [
                         {
                             "description": "Secure application",
-                            "file": "../build/last_config/mtb-example-ce-243041-secure-boot-and-update-with-epb.hex",
+                            "file": "../build/last_config/mtb-example-ce243041-secure-boot-and-update-with-epb.hex",
                             "signing-key": "{{ IMAGE_SIGNING_KEY }}",
                             "header-size": "0x400",
                             "slot-size": "{{ CYMEM_CM33_0_S_secondary_slot_SIZE }}",
@@ -32,14 +32,14 @@
                     "outputs": [
                         {
                             "description": "Signed and encrypted secured application",
-                            "file": "../build/last_config/mtb-example-ce-243041-secure-boot-and-update-with-epb_update.hex",
+                            "file": "../build/last_config/mtb-example-ce243041-secure-boot-and-update-with-epb_update.hex",
                             "format": "ihex"
                         }
                     ],
                     "extra_config": [
                         {
-                            "project": "mtb-example-ce-243041-secure-boot-and-update-with-epb",
-                            "debug_config_name": "mtb-example-ce-243041-secure-boot-and-update-with-epb",
+                            "project": "mtb-example-ce243041-secure-boot-and-update-with-epb",
+                            "debug_config_name": "mtb-example-ce243041-secure-boot-and-update-with-epb",
                             "default": true,
                             "build_dependency": "project"
                         }

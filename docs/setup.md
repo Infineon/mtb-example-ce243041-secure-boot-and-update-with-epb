@@ -299,13 +299,13 @@ Enabling secure boot of the EPB requires three things, all tied to the OEM key e
 
 > **Note:** This demonstration requires device ownership. If you have not already completed [ownership transfer](ownership_transfer.md) (for example, if you skipped the encrypted update demonstration or used `EC256` instead of `KDF-CMAC`), complete it first.
 
-1. Sign the EdgeProtect Bootloader image. In the *EdgeProtect Bootloader* project, build the bootloader in signed mode using the OEM private key created during ownership transfer:
+1. Sign the EdgeProtect Bootloader image. In the *EdgeProtect Bootloader* project, build and program the bootloader in signed mode using the OEM private key created during ownership transfer:
 
     ```
-    make build BOOT_MODE=signed OEM_KEY_FILE=../../<app-directory>/keys/oem_dev_priv_key.pem BOOT_RECORD_VALUE=B_Bootloader
+    make program BOOT_MODE=signed OEM_KEY_FILE=../../<app-directory>/keys/oem_dev_priv_key.pem BOOT_RECORD_VALUE=B_Bootloader
     ```
 
-    > **Note:** For more details on building the bootloader in signed mode, see the "Configuring the bootloader for Secure Lifecycle Stage (LCS)" section of the EdgeProtect Bootloader README, and the provisioning guide (AN241344).
+    > **Note:** For more details on building the bootloader in signed mode, see the "Configuring the bootloader for Secure Lifecycle Stage (LCS)" section of the EdgeProtect Bootloader README, and the provisioning guide (AN243370).
 
 2. In the OEM policy (*policy/policy_oem_provisioning.json*), set `device_policy` > `boot` > `boot_cfg_id` > `value` to `SECURE_APP`:
 
